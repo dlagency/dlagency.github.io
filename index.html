@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DL Agency – Správa sociálních sítí</title>
+  <!-- Přidáno Google font Limelight -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #0a1653; /* #70cbff,  */
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-shadow: 0 0 10px rgba(0,0,0,0.7);
+    }
+   /* Limelight jen pro header h1 */
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header img {
+      height: 100px;
+      margin-right: 30px;
+      border-radius: 30px;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #c2c5cc;
+    }
+    .hero {
+      background: url('22222220ea7794e-f9a2-4c82-aa03-80ba468d812b.jpg.png') center/cover no-repeat;
+      height: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 0 0 10px rgba(0,0,0,0.7);
+      margin-top: 20px; /* mezera 20px */
+      margin-bottom: 20px;
+    }
+    .hero h2 {
+      font-size: 2.8rem;
+      max-width: 700px;
+      text-align: center;
+      padding: 0 15px;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto 50px;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    section h3 {
+      color: #0a1653;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #0a1653;
+      padding-bottom: 5px;
+      display: inline-block;
+    }
+    .services-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .service {
+      flex: 1 1 250px;
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .service:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .service h4 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #0a1653;
+    }
+    footer {
+      background-color: #0a1653; /* #264653 */
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+    }
+    .contact-btn {
+      display: inline-block;
+      background-color: #eb074b;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      margin-top: 15px;
+    }
+    .contact-btn:hover {
+      background-color: #e0507b;
+    }
+    @media (max-width: 600px) {
+      .services-list {
+        flex-direction: column;
+      }
+      .hero {
+        height: 250px;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .header-left {
+        margin-bottom: 10px;
+      }
+      nav a {
+        display: inline-block;
+        margin: 5px 10px 0 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-left">
+      <img src="agency-high-resolution-logo.png" alt="DL Agency logo">
+      <h1>DL Agency</h1>
+    </div>
+    <nav>
+      <a href="#services">Služby</a>
+      <a href="#about">O nás</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Profesionální správa sociálních sítí pro vaši firmu</h2>
+  </div>
+
+  <main>
+    <section id="services">
+      <h3>Naše služby</h3>
+      <div class="services-list">
+        <div class="service">
+          <h4>Strategie sociálních sítí</h4>
+          <p>Vypracujeme plán na míru, který zvýší dosah a zapojení vašich zákazníků.</p>
+        </div>
+        <div class="service">
+          <h4>Tvorba a plánování obsahu</h4>
+          <p>Vytváříme kvalitní příspěvky, které zaujmou a podpoří váš brand.</p>
+        </div>
+        <div class="service">
+          <h4>Správa kampaní</h4>
+          <p>Optimalizujeme reklamy a kampaně pro maximální návratnost investic.</p>
+        </div>
+        <div class="service">
+          <h4>Analýza a reporting</h4>
+          <p>Pravidelně sledujeme výsledky a připravujeme přehledné reporty.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h3>O nás</h3>
+      <p>Jsme zkušený tým marketérů specializující se na správu sociálních sítí. Pomáháme firmám růst díky efektivnímu využití Facebooku, Instagramu, LinkedInu a dalších platforem.</p>
+    </section>
+
+    <section id="contact">
+      <h3>Kontaktujte nás</h3>
+      <p>Máte zájem o spolupráci? Napište nám a my se vám co nejdříve ozveme.</p>
+      <a href="mailto:kontakt@dlagency.cz" class="contact-btn">Napište nám</a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 DL Agency – Všechna práva vyhrazena
+  </footer>
+
+</body>
+</html>
