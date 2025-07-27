@@ -216,17 +216,15 @@
   <main>
     <section class="services-section">
       <h2>Naše služby</h2>
-      <div class="free-note">První 2 týdny zdarma!</div>
+      <div class="free-note">První 2 týdny zdarma! - Bez závazků</div>
       <div class="services-grid">
-        <div class="service-box" onclick="showInfo('instagram')">Instagram</div>
-        <div class="service-box" onclick="showInfo('tiktok')">TikTok</div>
-        <div class="service-box" onclick="showInfo('analytika')">Analytika</div>
-        <div class="service-box" onclick="showInfo('branding')">Branding</div>
-        <div class="service-box" onclick="showInfo('strategie')">Strategie</div>
-        <div class="service-box" onclick="showInfo('reklama')">Reklama</div>
-        <div class="service-box" onclick="showInfo('copywriting')">Copywriting</div>
-        <div class="service-box" onclick="showInfo('foto')">Foto & video</div>
-        <div class="service-box" onclick="showInfo('web')">Správa webu</div>
+               <div class="service-box" onclick="showInfo('instagram')">Základní balíček</div>
+        <div class="service-box" onclick="showInfo('tiktok')">Standartní balíček</div>
+        <div class="service-box" onclick="showInfo('analytika')">Rozšířený balíček</div>
+        <div class="service-box" onclick="showInfo('branding')">Webové stránky</div>
+        <div class="service-box" onclick="showInfo('strategie')">Webové stránky + 1</div>
+        <div class="service-box" onclick="showInfo('reklama')">Prémiový balíček</div>
+  
       </div>
     </section>
   </main>
@@ -244,15 +242,12 @@
 
   <script>
     const data = {
-      instagram: "Spravujeme firemní Instagramy – od obsahu přes plánování až po hashtagy a analýzy.",
-      tiktok: "Vytváříme trendy a virální TikTok obsah na míru vašemu cíli a cílovce.",
-      analytika: "Vyhodnocujeme výkon příspěvků, kampaní i růst sledujících.",
-      branding: "Budujeme silnou značku vizuálně i obsahově. Od loga po tone of voice.",
-      strategie: "Navrhujeme strategie pro růst sledujících, dosah i konverze.",
+      instagram: "  • 1 síť (např. Instagram) <br> •  4–6 příspěvků měsíčně <br> •  lehká grafika + text<br> •  plánování v nástroji (např. Meta Business Suite)  <br> •  základní reporting  <br> •  Cena: 5 000 Kč/měsíc",
+      tiktok: "•  2 sítě (např. Instagram + Facebook) <br> •  8–12 příspěvků měsíčně <br> •  základní stories <br> •  jednoduché reklamní kampaně (boostování) <br> •  měsíční reportzákladní community management (odpovědi na komentáře/zprávy) <br> •  Cena: 7 000 Kč/měsíc",
+      analytika: "•  3 sítě (např. IG + FB + LinkedIn) <br> •  12–20 příspěvků měsíčně <br> •  profesionální grafika a copywriting <br> •  komplexní stories, reels, videaspráva reklamních kampaní (ad budget samostatně) <br> •  měsíční strategický report + konzultace <br> •  Cena: 10 000 Kč/měsíc",
+      branding: "•  Jednoduchý jednostránkový web („one-page“)<br> •  Responzivní design (mobil/tablet)<br> •  Základní obsah (O nás, Služby, Kontakt)<br> •  Kontaktní formulář<br> •  Napojení na Google Maps<br> •  Základní SEO nastavení<br> •  Cena: 8 000 Kč (jednorázově)<br> •  Dodání: 5–10 dní",
+      strategie: "• 3–6 podstránek (např. Domů, O nás, Služby, Galerie, Kontakt)<br> •  Moderní design na míru (nebo upravená šablona)<br> •  Responzivní verze pro mobilZákladní optimalizace pro vyhledávače (SEO)<br> •  Kontaktní formulář + propojení na sociální sítě<br> •  Jednoduchá galerie nebo reference<br> •  Zaškolení v administraci (pokud je web na WordPressu)<br> •  Cena: 15 000–25 000 Kč (jednorázově)<br> •  Dodání: 12–20 dní",
       reklama: "Spravujeme výkonné reklamní kampaně na Meta, TikToku a Google.",
-      copywriting: "Píšeme přesvědčivé texty pro sítě, weby, newslettery i reklamy.",
-      foto: "Zajišťujeme focení produktů a vizuální obsah pro sítě.",
-      web: "Spravujeme jednoduché weby, aktualizace obsahu i SEO základy."
     };
 
     function showInfo(key) {
