@@ -1,71 +1,168 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DL Agency – Správa sociálních sítí</title>
-  <!-- Přidáno Google font Limelight -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>O nás – DL Agency</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #0a1653;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-shadow: 0 0 10px rgba(0,0,0,0.7);
+    }
+    header img {
+      height: 100px;
+      margin-right: 30px;
+      border-radius: 30px;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+    .logo-link {
+      color: white;
+      text-decoration: none;
+    }
+    .logo-link:hover {
+      color: #c2c5cc;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #c2c5cc;
+    }
+    .contact-btn-nav {
+      display: inline-block;
+      background-color: #eb074b;
+      color: white !important;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      margin-top: 15px;
+    }
+    .contact-btn-nav:hover {
+      background-color: #c4063f;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
     .about-us {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-.about-us h2, .about-us h3 {
-  color: #0a1653;
-  margin-top: 30px;
-}
-
-.about-us p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.team-list, .reasons {
-  list-style: disc inside;
-  margin-bottom: 30px;
-  padding-left: 0;
-}
-
-.team-list li, .reasons li {
-  margin-bottom: 10px;
-}
+      background-color: white;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    .about-us h2, .about-us h3 {
+      color: #0a1653;
+      margin-top: 30px;
+    }
+    .about-us p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .about-us ul {
+      list-style: disc inside;
+      padding-left: 0;
+      margin-bottom: 30px;
+    }
+    .about-us li {
+      margin-bottom: 10px;
+    }
+    footer {
+      background-color: #0a1653;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .header-left {
+        margin-bottom: 10px;
+      }
+      nav a {
+        display: inline-block;
+        margin: 5px 10px 0 0;
+      }
+    }
   </style>
 </head>
- 
-<main>
-  <section class="about-us">
-    <h2>Kdo jsme</h2>
-    <p>
-      Jsme mladá, dynamická agentura specializující se na správu sociálních sítí, tvorbu obsahu a digitální marketing.
-      Pomáháme značkám vyniknout na Instagramu, Facebooku, TikToku a dalších platformách.
-    </p>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="agency-high-resolution-logo.png" alt="DL Agency logo">
+      <h1><a href="/" class="logo-link">DL Agency</a></h1>
+    </div>
+    <nav>
+      <a href="sluzby.html">Služby</a>
+      <a href="o-nas.html">O nás</a>
+      <a href="kontakty.html" class="contact-btn-nav">Kontakt</a>
+    </nav>
+  </header>
 
-    <h3>Naše mise</h3>
-    <p>
-      Naším cílem je budovat silné online komunity, zvyšovat viditelnost značek a přetvářet sledující v loajální zákazníky.
-    </p>
+  <main>
+    <section class="about-us">
+      <h2>Kdo jsme</h2>
+      <p>
+        Jsme mladá, dynamická agentura specializující se na správu sociálních sítí, tvorbu obsahu a digitální marketing.
+        Pomáháme značkám vyniknout na Instagramu, Facebooku, TikToku a dalších platformách.
+      </p>
 
-    <h3>Náš tým</h3>
-    <ul class="team-list">
-      <li><strong>Dominik</strong> – zakladatel & stratég sociálních sítí</li>
-      <li><strong>Lucie</strong> – kreativní obsah & copywriting</li>
-      <li><strong>Jakub</strong> – analytika a výkonnostní kampaně</li>
-    </ul>
+      <h3>Naše mise</h3>
+      <p>
+        Naším cílem je budovat silné online komunity, zvyšovat viditelnost značek a přetvářet sledující v loajální zákazníky.
+      </p>
 
-    <h3>Proč my?</h3>
-    <ul class="reasons">
-      <li>Osobní přístup ke každému klientovi</li>
-      <li>Kreativní a efektivní strategie</li>
-      <li>Rychlá komunikace a flexibilita</li>
-    </ul>
-  </section>
-</main>
+      <h3>Náš tým</h3>
+      <ul>
+        <li><strong>Dominik</strong> – zakladatel & stratég sociálních sítí</li>
+        <li><strong>Lucie</strong> – kreativní obsah & copywriting</li>
+        <li><strong>Jakub</strong> – analytika a výkonnostní kampaně</li>
+      </ul>
 
+      <h3>Proč my?</h3>
+      <ul>
+        <li>Osobní přístup ke každému klientovi</li>
+        <li>Kreativní a efektivní strategie</li>
+        <li>Rychlá komunikace a flexibilita</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 DL Agency – Všechna práva vyhrazena
+  </footer>
+</body>
+</html>
