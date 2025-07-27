@@ -162,7 +162,20 @@
       cursor: pointer;
       font-weight: bold;
     }
-
+  .pdf-button {
+    display: inline-block;
+    background-color: #0a1653;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  .pdf-button:hover {
+    background-color: #1f2a7a;
+  }
     footer {
       background-color: #0a1653;
       color: white;
@@ -235,7 +248,11 @@
       <div id="modalContent"></div>
     </div>
   </div>
-
+<div style="text-align: center; margin-top: 50px;">
+  <a href="cenik.pdf" target="_blank" class="pdf-button">
+    Zobrazit ceník (PDF)
+  </a>
+</div>
   <footer>
     &copy; 2025 DL Agency – Všechna práva vyhrazena
   </footer>
