@@ -101,14 +101,20 @@
     section {
       margin-bottom: 40px;
     }
-    section h3 {
+     section h3 a {
       color: #0a1653;
       font-size: 1.8rem;
       margin-bottom: 20px;
       border-bottom: 3px solid #0a1653;
       padding-bottom: 5px;
       display: inline-block;
+      text-decoration: none;
+      transition: border-color 0.3s, color 0.3s;
     }
+    section h3 a:hover {
+      color: #eb074b;         /* nová barva textu při hover */
+      border-color: #eb074b;  /* nová barva border-bottom při hover */
+      }
     .services-list {
       display: flex;
       flex-wrap: wrap;
@@ -181,8 +187,8 @@
       <h1><a href="/" class="logo-link">DL Agency</a></h1>
     </div>
     <nav>
-      <a href="#services">Služby</a>
-      <a href="#about">O nás</a>
+      <a href="sluzby.html">Služby</a>
+      <a href="o-nas.html">O nás</a>
       <a href="kontakty.html" class="contact-btn-nav">Kontakt</a>
     
     </nav>
@@ -194,7 +200,7 @@
 
   <main>
     <section id="services">
-      <h3>Naše služby</h3>
+      <h3><a href="sluzby.html">Naše služby</a></h3>
       <div class="services-list">
         <div class="service">
           <h4>Strategie sociálních sítí</h4>
@@ -216,12 +222,12 @@
     </section>
 
     <section id="about">
-      <h3>O nás</h3>
+       <h3><a href="o-nas.html">O nás</a></h3>
       <p>Jsme zkušený tým marketérů specializující se na správu sociálních sítí. Pomáháme firmám růst díky efektivnímu využití Facebooku, Instagramu, LinkedInu a dalších platforem.</p>
     </section>
 
     <section id="contact">
-      <h3>Kontaktujte nás</h3>
+      <h3><a href="kontakty.html">Kontakt</a></h3>
       <p>Máte zájem o spolupráci? Napište nám a my se vám co nejdříve ozveme.</p>
       <a href="kontakty.html" class="contact-btn">Napište nám</a>
     </section>
