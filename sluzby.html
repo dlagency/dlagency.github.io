@@ -1,1 +1,183 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Služby – DL Agency</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #0a1653;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-shadow: 0 0 10px rgba(0,0,0,0.7);
+    }
+    header img {
+      height: 100px;
+      margin-right: 30px;
+      border-radius: 30px;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+    .logo-link {
+      color: white;
+      text-decoration: none;
+    }
+    .logo-link:hover {
+      color: #c2c5cc;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #c2c5cc;
+    }
+    .contact-btn-nav {
+      display: inline-block;
+      background-color: #eb074b;
+      color: white !important;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      margin-top: 15px;
+    }
+    .contact-btn-nav:hover {
+      background-color: #c4063f;
+    }
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .services-section {
+      background-color: white;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    .services-section h2 {
+      color: #0a1653;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .promo-text {
+      background-color: #eb074b;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 10px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    td {
+      border: 1px solid #ddd;
+      padding: 20px;
+      text-align: center;
+      vertical-align: top;
+      font-size: 1rem;
+    }
+    td:hover {
+      background-color: #f0f0f0;
+    }
+    footer {
+      background-color: #0a1653;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .header-left {
+        margin-bottom: 10px;
+      }
+      nav a {
+        display: inline-block;
+        margin: 5px 10px 0 0;
+      }
+      td {
+        font-size: 0.95rem;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="agency-high-resolution-logo.png" alt="DL Agency logo">
+      <h1><a href="/" class="logo-link">DL Agency</a></h1>
+    </div>
+    <nav>
+      <a href="sluzby.html">Služby</a>
+      <a href="o-nas.html">O nás</a>
+      <a href="kontakty.html" class="contact-btn-nav">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="services-section">
+      <h2>Naše služby</h2>
+      <div class="promo-text">
+        Prvních 14 dní zdarma – vyzkoušejte nás bez závazků!
+      </div>
+
+      <table>
+        <tr>
+          <td>Správa Instagramu<br><small>Pravidelné příspěvky, stories, hashtagy</small></td>
+          <td>Tvorba obsahu<br><small>Texty, grafika, fotky, reels</small></td>
+          <td>Reklamní kampaně<br><small>Meta Ads, cílení, optimalizace</small></td>
+        </tr>
+        <tr>
+          <td>Analýza profilu<br><small>Optimalizace BIO, konzultace</small></td>
+          <td>Komunitní management<br><small>Odpovědi, DM, komentáře</small></td>
+          <td>Strategie<br><small>Měsíční plán, cíle, analýza konkurence</small></td>
+        </tr>
+        <tr>
+          <td>Reportování<br><small>Přehled výsledků každý měsíc</small></td>
+          <td>Poradenství<br><small>Co zlepšit, jak růst</small></td>
+          <td>Influence marketing<br><small>Spolupráce s mikroinfluencery</small></td>
+        </tr>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 DL Agency – Všechna práva vyhrazena
+  </footer>
+</body>
+</html>
 
