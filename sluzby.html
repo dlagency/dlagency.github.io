@@ -13,6 +13,7 @@
       background: #f9f9f9;
       color: #333;
     }
+
     header {
       background-color: #0a1653;
       color: white;
@@ -22,28 +23,34 @@
       justify-content: space-between;
       text-shadow: 0 0 10px rgba(0,0,0,0.7);
     }
+
     header img {
       height: 100px;
       margin-right: 30px;
       border-radius: 30px;
     }
+
     .header-left {
       display: flex;
       align-items: center;
     }
+
     .logo-link {
       color: white;
       text-decoration: none;
     }
+
     .logo-link:hover {
       color: #c2c5cc;
     }
+
     header h1 {
       margin: 0;
       font-weight: 700;
       font-size: 2rem;
       letter-spacing: 1px;
     }
+
     nav a {
       color: white;
       text-decoration: none;
@@ -52,9 +59,11 @@
       font-size: 1.1rem;
       transition: color 0.3s;
     }
+
     nav a:hover {
       color: #c2c5cc;
     }
+
     .contact-btn-nav {
       display: inline-block;
       background-color: #eb074b;
@@ -66,49 +75,94 @@
       transition: background-color 0.3s;
       margin-top: 15px;
     }
+
     .contact-btn-nav:hover {
       background-color: #c4063f;
     }
+
     main {
       max-width: 1000px;
       margin: 40px auto;
       padding: 0 20px;
     }
+
     .services-section {
       background-color: white;
       padding: 40px 30px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      text-align: center;
     }
+
     .services-section h2 {
       color: #0a1653;
       font-size: 2rem;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
-    .promo-text {
-      background-color: #eb074b;
+
+    .free-note {
+     background-color: #eb074b;
       color: white;
-      padding: 15px 25px;
+      padding: 10px 25px;
       border-radius: 10px;
       font-weight: 600;
       text-align: center;
       margin-bottom: 30px;
+      font-size: 1.1rem;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
-    td {
-      border: 1px solid #ddd;
+
+    .service-box {
+      background-color: #f0f2f9;
       padding: 20px;
-      text-align: center;
-      vertical-align: top;
-      font-size: 1rem;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #0a1653;
+      box-shadow: 0 0 6px rgba(0,0,0,0.05);
     }
-    td:hover {
-      background-color: #f0f0f0;
+
+    .service-box:hover {
+      background-color: #e2e6f5;
     }
+
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .modal {
+      background: white;
+      padding: 30px 25px;
+      border-radius: 10px;
+      max-width: 400px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      position: relative;
+      text-align: left;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 1.5rem;
+      color: #eb074b;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
     footer {
       background-color: #0a1653;
       color: white;
@@ -116,21 +170,32 @@
       padding: 20px 10px;
       font-size: 0.9rem;
     }
+
+    @media (max-width: 768px) {
+      .services-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
     @media (max-width: 600px) {
       header {
         flex-direction: column;
         align-items: flex-start;
       }
+
       .header-left {
         margin-bottom: 10px;
       }
+
       nav a {
         display: inline-block;
         margin: 5px 10px 0 0;
-      }
-      td {
-        font-size: 0.95rem;
-        padding: 15px;
       }
     }
   </style>
@@ -151,33 +216,59 @@
   <main>
     <section class="services-section">
       <h2>Naše služby</h2>
-      <div class="promo-text">
-        Prvních 14 dní zdarma – vyzkoušejte nás bez závazků!
+      <div class="free-note">První 2 týdny zdarma!</div>
+      <div class="services-grid">
+        <div class="service-box" onclick="showInfo('instagram')">Instagram</div>
+        <div class="service-box" onclick="showInfo('tiktok')">TikTok</div>
+        <div class="service-box" onclick="showInfo('analytika')">Analytika</div>
+        <div class="service-box" onclick="showInfo('branding')">Branding</div>
+        <div class="service-box" onclick="showInfo('strategie')">Strategie</div>
+        <div class="service-box" onclick="showInfo('reklama')">Reklama</div>
+        <div class="service-box" onclick="showInfo('copywriting')">Copywriting</div>
+        <div class="service-box" onclick="showInfo('foto')">Foto & video</div>
+        <div class="service-box" onclick="showInfo('web')">Správa webu</div>
       </div>
-
-      <table>
-        <tr>
-          <td>Správa Instagramu<br><small>Pravidelné příspěvky, stories, hashtagy</small></td>
-          <td>Tvorba obsahu<br><small>Texty, grafika, fotky, reels</small></td>
-          <td>Reklamní kampaně<br><small>Meta Ads, cílení, optimalizace</small></td>
-        </tr>
-        <tr>
-          <td>Analýza profilu<br><small>Optimalizace BIO, konzultace</small></td>
-          <td>Komunitní management<br><small>Odpovědi, DM, komentáře</small></td>
-          <td>Strategie<br><small>Měsíční plán, cíle, analýza konkurence</small></td>
-        </tr>
-        <tr>
-          <td>Reportování<br><small>Přehled výsledků každý měsíc</small></td>
-          <td>Poradenství<br><small>Co zlepšit, jak růst</small></td>
-          <td>Influence marketing<br><small>Spolupráce s mikroinfluencery</small></td>
-        </tr>
-      </table>
     </section>
   </main>
+
+  <div id="modalOverlay" class="modal-overlay" onclick="closeModalOutside(event)">
+    <div class="modal" onclick="event.stopPropagation()">
+      <span class="modal-close" onclick="closeModal()">&times;</span>
+      <div id="modalContent"></div>
+    </div>
+  </div>
 
   <footer>
     &copy; 2025 DL Agency – Všechna práva vyhrazena
   </footer>
+
+  <script>
+    const data = {
+      instagram: "Spravujeme firemní Instagramy – od obsahu přes plánování až po hashtagy a analýzy.",
+      tiktok: "Vytváříme trendy a virální TikTok obsah na míru vašemu cíli a cílovce.",
+      analytika: "Vyhodnocujeme výkon příspěvků, kampaní i růst sledujících.",
+      branding: "Budujeme silnou značku vizuálně i obsahově. Od loga po tone of voice.",
+      strategie: "Navrhujeme strategie pro růst sledujících, dosah i konverze.",
+      reklama: "Spravujeme výkonné reklamní kampaně na Meta, TikToku a Google.",
+      copywriting: "Píšeme přesvědčivé texty pro sítě, weby, newslettery i reklamy.",
+      foto: "Zajišťujeme focení produktů a vizuální obsah pro sítě.",
+      web: "Spravujeme jednoduché weby, aktualizace obsahu i SEO základy."
+    };
+
+    function showInfo(key) {
+      document.getElementById("modalContent").innerHTML = "<strong>Popis služby:</strong><br><br>" + data[key];
+      document.getElementById("modalOverlay").style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("modalOverlay").style.display = "none";
+    }
+
+    function closeModalOutside(event) {
+      if (event.target.id === "modalOverlay") {
+        closeModal();
+      }
+    }
+  </script>
 </body>
 </html>
-
